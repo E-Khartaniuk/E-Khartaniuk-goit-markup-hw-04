@@ -10,6 +10,7 @@
   --button-background: #188ce8;
   --text-color-white: #ffffff;
   --header-line-color: #ececec;
+  --soctial-icon-color: #afb1b8;
 }
 
 *,
@@ -228,33 +229,10 @@ ul {
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--team-section-background);
-  padding: 25px 100px;
-  /* background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url(../images/antenna.svg); */
-}
-
-/* .antena-icon {
-  background-image: url(../images/antenna.svg);
-}
-
-.clock-icon {
-  
-  background-image: url(../images/clock.svg);
-} */
-
-.bnf-icon {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
-/* .icon-antenna {
-  margin: auto auto;
-} */
-
-/* .benefits-icon > svg {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 44px;
-} */
 
 .benefits-title {
   font-size: 14px;
@@ -273,6 +251,7 @@ ul {
 .benefits-item {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -311,11 +290,16 @@ ul {
 .directions-list {
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
-  gap: 30px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.directions-sotial {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .diractions-item {
@@ -378,6 +362,25 @@ ul {
   letter-spacing: 0.03em;
 
   text-align: center;
+}
+
+.directions-list {
+  margin-top: 16px;
+}
+
+.soc-link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--soctial-icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soc-link:hover {
+  fill: var(--text-color-white);
+  background-color: var(--accent-color);
 }
 
 .team-text {
