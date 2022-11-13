@@ -120,7 +120,7 @@ ul {
 
 .contact-flex {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   margin-left: auto;
   align-items: baseline;
 }
@@ -377,7 +377,8 @@ ul {
   justify-content: center;
 }
 
-.soc-link:hover {
+.soc-link:hover,
+.soc-link:focus {
   fill: var(--text-color-white);
   background-color: var(--accent-color);
 }
@@ -385,6 +386,60 @@ ul {
 .team-text {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/*Регулярні Клієнті */
+
+.clietnts-title {
+  /* display: inline-block; */
+  font-size: 36px;
+  line-height: 1.1666;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.regular-clients {
+  background-color: var(--text-color-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-clients-list {
+  display: flex;
+  gap: 30px;
+}
+.regular-clients-item {
+  display: block;
+  width: 170px;
+  height: 92px;
+}
+
+.regular-clients-link {
+  border: 1px solid;
+  border-color: var(--soctial-icon-color);
+  color: var(--soctial-icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  cursor: pointer;
+  width: 170px;
+  height: 92px;
+  display: inline-block;
+  /* display: flex; */
+}
+
+.regular-clients-link svg {
+  width: 106px;
+  height: 60px;
+  fill: var(--soctial-icon-color);
+}
+
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* футер */
@@ -442,24 +497,45 @@ ul {
   color: var(--accent-color);
 }
 
-.regular-clients {
-  background-color: var(--text-color-white);
+.footer-soc-title {
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+  color: var(--text-color-white);
 }
 
-.regular-clients-list {
+.clients-logo {
+  fill: currentColor;
+}
+
+.footer-flex {
   display: flex;
-}
-.regular-clients-item {
-  display: block;
-  width: 170px;
-  height: 92px;
+  gap: 70px;
 }
 
-.regular-clients-link {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding: 16px 32px;
-  cursor: pointer;
+.footer-soc-link {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--text-color-white);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background: var(--accent-color);
+}
+
+.footer-inks-list {
+  display: flex;
+  gap: 10px;
 }
 
 /* Сторінка портфоліо */
@@ -511,6 +587,12 @@ ul {
 
 .portfolio-item {
   text-decoration: none;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item img {
