@@ -56,7 +56,7 @@
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <!-- <h1 class="title">Ефективні рішення для вашого бізнесу</h1> -->
-          <button type="button" class="order-button">Замовити послугу</button>
+          <button type="button" class="order-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -128,6 +128,10 @@
                 width="370"
                 class="img-block"
               />
+
+              <div class="direction-overlay">
+                <p class="direction-overlay-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="diractions-item">
               <img
@@ -136,6 +140,9 @@
                 width="370"
                 class="img-block"
               />
+              <div class="direction-overlay">
+                <p class="direction-overlay-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="diractions-item">
               <img
@@ -144,6 +151,9 @@
                 width="370"
                 class="img-block"
               />
+              <div class="direction-overlay">
+                <p class="direction-overlay-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -437,5 +447,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/symbol-defs.svg#modal-close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
